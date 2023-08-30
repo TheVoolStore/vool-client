@@ -1,8 +1,7 @@
 import React from 'react';
-import Header from '@/ui-components/header';
 import './globals.css';
-import Footer from '@/ui-components/footer';
-import { montserrat } from '@/ui-components/fonts';
+import Header from '@/components/modules/Header';
+import Footer from '@/components/modules/Footer';
 
 export const metadata = {
   title: 'VOOL',
@@ -15,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={montserrat.variable}>
+    <html lang="en">
       <body>
         <Header />
         {children}
