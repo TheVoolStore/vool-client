@@ -1,9 +1,72 @@
-:root {
-  --max-width: 1100px;
-  --border-radius: 12px;
-  --vool-orange: #ea5823;
-  --vool-grey: #383838;
-  --vool-green: #20af88;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'ClashGrotesk';
+    src: local('Clash Grotesk Regular'),
+      url('../../public/fonts/ClashGrotesk-Regular.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'ClashGrotesk';
+    src: local('Clash Grotesk Medium'),
+      url('../../public/fonts/ClashGrotesk-Medium.woff') format('woff');
+    font-weight: bold;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'ClashGrotesk';
+    src: local('Clash Grotesk Semibold'),
+      url('../../public/fonts/ClashGrotesk-Semibold.woff') format('woff');
+    font-weight: 800;
+    font-display: swap;
+  }
+}
+
+@layer utilities {
+  .overlay:hover .overlay-first-elem {
+    display: block;
+  }
+
+  .overlay .overlay-first-elem,
+  .overlay:hover .overlay-second-elem {
+    display: none;
+  }
+
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .no-space {
+    word-spacing: -3px;
+  }
+
+  /* horizontally center absolute positioned element, width has to be defined e.g: w-fit or w-2 */
+  .center-x-absolute {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+
+  /* vertically center absolute positioned element, height has to be defined e.g: h-fit or h-2 */
+  .center-y-absolute {
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 0;
+    bottom: 0;
+  }
 }
 
 * {
@@ -12,18 +75,17 @@
   margin: 0;
 }
 
-html {
-  font-family: var(--primary-font);
-}
-
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'ClashGrotesk', serif;
+  font-size: 14px;
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
-
