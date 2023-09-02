@@ -14,7 +14,7 @@ export const VoolButton: React.FC<
     /*@todo add min heights and widths*/
   }
   const sizes = {
-    sm: 'text-sm px-12 py-2.5',
+    sm: 'text-sm px-7 py-2.5',
     md: 'text-sm px-12 py-2.5',
     lg: 'w-full',
   };
