@@ -3,7 +3,7 @@ import Placeholder1 from '@/../public/images/placeholder/Frame159.png';
 import Placeholder2 from '@/../public/images/placeholder/Frame160.png';
 import Placeholder3 from '@/../public/images/placeholder/Frame161.png';
 import Placeholder4 from '@/../public/images/placeholder/Frame162.png';
-import { OutlinedCard, ProductCard } from '@/components/ui/Cards';
+import { AltCard, OutlinedCard, ProductCard } from '@/components/ui/Cards';
 import { VoolButton } from '@/components/ui/Buttons';
 
 export default function Home() {
@@ -51,6 +51,9 @@ export default function Home() {
           <div className="flex justify-between">
             <h2>On Sale</h2>
             <p className="text-lg">Arrows</p>
+          </div>
+          <div>
+            <AltCard />
           </div>
           <div className="flex justify-center mt-4">
             <VoolButton text="See More" />
