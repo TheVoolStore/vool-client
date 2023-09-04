@@ -10,8 +10,8 @@ const ResetPassword = () => {
 
   return (
     <>
-      <div className="my-7 md:mt-2  md:mb-14 h-[calc(100vh-16.5rem)] md:h-[calc(100vh-19rem)] bg-[#EEE7DF] md:bg-white">
-        <div className="w-[90%] md:w-[80%] md:px-10 lg:w-[60%] mx-auto md:bg-[#EEE7DF]">
+      <div className="my-7 md:mt-2  md:mb-14 h-[calc(100vh-16.5rem)] md:h-[calc(100vh-19rem)] bg-vool-light-orange md:bg-white">
+        <div className="w-[90%] md:w-[80%] md:px-10 lg:w-[60%] mx-auto md:bg-vool-light-orange">
           <div className="flex justify-around items-center text-xl pt-6 border-b-2 border-vool-orange text-gray-600">
             <button className="w-full">Login</button>
 

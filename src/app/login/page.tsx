@@ -14,8 +14,8 @@ const Login = () => {
 
   return (
     <>
-      <div className="mt-16 h-[calc(100vh-17rem)] md:h-[calc(100vh-19rem)] bg-[#EEE7DF] md:bg-white">
-        <div className="w-[90%] md:w-[80%] md:px-10 md:pb-7 lg:w-[60%] mx-auto md:bg-[#EEE7DF]">
+      <div className="mt-16 h-[calc(100vh-17rem)] md:h-[calc(100vh-19rem)] bg-vool-light-orange md:bg-white">
+        <div className="w-[90%] md:w-[80%] md:px-10 md:pb-7 lg:w-[60%] mx-auto md:bg-vool-light-orange">
           <div className="flex justify-around items-center text-xl pt-6 border-b-2 border-vool-orange text-gray-600">
             <button className="w-full">
               <p className="border-b-4 border-vool-orange inline text-vool-orange">
