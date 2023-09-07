@@ -37,15 +37,6 @@
 }
 
 @layer utilities {
-  .overlay:hover .overlay-first-elem {
-    display: block;
-  }
-
-  .overlay .overlay-first-elem,
-  .overlay:hover .overlay-second-elem {
-    display: none;
-  }
-
   /* Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
     display: none;
@@ -77,6 +68,10 @@
   }
 }
 
+:root {
+  font-size: 0.875rem;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -90,7 +85,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'ClashGrotesk', serif;
-  font-size: 14px;
 }
 
 a {
