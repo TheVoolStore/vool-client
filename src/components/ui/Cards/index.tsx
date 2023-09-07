@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import WishlistIcon from '@/../public/images/wishlist-icon.svg';
 import ProductImage from '@/../public/images/product-example.jpg';
@@ -30,7 +30,7 @@ export const ProductCard: React.FC = () => (
 );
 
 export const OutlinedCard: React.FC<{
-  children?: ReactNode;
+  children?: React.ReactNode;
   className?: string;
 }> = ({ children, className }) => (
   <div
