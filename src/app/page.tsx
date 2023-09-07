@@ -8,7 +8,7 @@ import { VoolButton } from '@/components/ui/Buttons';
 
 export default function Home() {
   return (
-    <main className="px-5 md:px-16 min-h-screen pt-10 pb-32">
+    <main className="px-5 md:px-16 pt-10 pb-32">
       <section>
         <div className="flex flex-row gap-x-5 justify-center">
           <Image src={Placeholder1} alt="none" height={480} />
