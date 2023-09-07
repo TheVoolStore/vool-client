@@ -68,6 +68,10 @@
       {
         "endOfLine": "auto"
       }
-    ]
+    ],
+    // only allows imports from index.(ts|tsx)
+    "import/no-internal-modules": ["error", {
+      "forbid": ["src/**"]
+    }]
   }
 }
