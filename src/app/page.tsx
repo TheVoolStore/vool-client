@@ -1,3 +1,5 @@
+'use client';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Placeholder1 from '@/../public/images/placeholder/Frame159.png';
 import Placeholder2 from '@/../public/images/placeholder/Frame160.png';
@@ -5,8 +7,19 @@ import Placeholder3 from '@/../public/images/placeholder/Frame161.png';
 import Placeholder4 from '@/../public/images/placeholder/Frame162.png';
 import { AltCard, OutlinedCard, ProductCard } from '@/components/ui/Cards';
 import { VoolButton } from '@/components/ui/Buttons';
+import { Overlay } from '@/components/ui/Overlay';
 
 export default function Home() {
+  const [isOverlayOpen, setIsOverlayOpen] = useState(false);
+
+  const handleOpenOverlay = () => {
+    setIsOverlayOpen(true);
+  };
+
+  const handleCloseOverlay = () => {
+    setIsOverlayOpen(false);
+  };
+
   return (
     <main className="px-5 md:px-16 pt-10 pb-32">
       <section>
@@ -42,6 +55,12 @@ export default function Home() {
             <div className="flex justify-center mt-4">
               <VoolButton text="See More" />
             </div>
+            <button onClick={handleOpenOverlay}>Open Overlay</button>
+            <Overlay
+              text="Vintage Shirt added to cart"
+              isOpen={isOverlayOpen}
+              onClose={handleCloseOverlay}
+            />
           </div>
         </div>
       </section>
